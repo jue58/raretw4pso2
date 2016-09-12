@@ -7,7 +7,7 @@ Execute `npm install -g node-lambda` then execute `npm install` in each lambda p
 
 Add deploy.env file to each lambda project and change env settings as you want. see also: [node-lambda](https://github.com/motdotla/node-lambda)
 
-```:deploy.env
+```
 AWS_ACCESS_KEY_ID=<your key ID>
 AWS_SECRET_ACCESS_KEY=<your secret access key>
 AWS_SESSION_TOKEN=
@@ -27,7 +27,7 @@ AWS_RUNTIME=nodejs
 ### lambda
 Add .env file to each lambda project and change env settings for development environment.
 
-```:.env
+```
 AWS_ACCESS_KEY_ID=<your key ID>
 AWS_SECRET_ACCESS_KEY=<your secret access key>
 AWS_SESSION_TOKEN=
@@ -45,7 +45,7 @@ AWS_RUNTIME=nodejs
 If you need, you can add event.json to each lambda project.
 you can debug these lambda codes. see also: [node-lambda](https://github.com/motdotla/node-lambda)
 
-```json:envent.json
+```json
 {
   "Records": [
     {
