@@ -1,11 +1,12 @@
 # raretw4pso2
 
-## prepare
+## Prepare
 
-### lambda
+### Lambda
 Execute `npm install -g node-lambda` then execute `npm install` in each lambda project.
 
-Add deploy.env file to each lambda project and change env settings as you want. see also: [node-lambda](https://github.com/motdotla/node-lambda)
+Add deploy.env file to each lambda project and change env settings as you want.
+see also: [node-lambda](https://github.com/motdotla/node-lambda)
 
 ```
 AWS_ACCESS_KEY_ID=<your key ID>
@@ -22,9 +23,9 @@ AWS_DESCRIPTION=
 AWS_RUNTIME=nodejs
 ```
 
-## development
+## Development
 
-### lambda
+### Lambda
 Add .env file to each lambda project and change env settings for development environment.
 
 ```
@@ -43,7 +44,8 @@ AWS_RUNTIME=nodejs
 ```
 
 If you need, you can add event.json to each lambda project.
-you can debug these lambda codes. see also: [node-lambda](https://github.com/motdotla/node-lambda)
+you can debug these lambda codes.
+see also: [node-lambda](https://github.com/motdotla/node-lambda)
 
 ```json
 {
