@@ -6,10 +6,9 @@
 Execute `npm install -g node-lambda` then execute `npm install` in each lambda project.
 
 Add deploy.env file to each lambda project and change env settings as you want.
-see also: [node-lambda](https://github.com/motdotla/node-lambda)
 
 ```
-AWS_ACCESS_KEY_ID=<your key ID>
+AWS_ACCESS_KEY_ID=<your access key ID>
 AWS_SECRET_ACCESS_KEY=<your secret access key>
 AWS_SESSION_TOKEN=
 AWS_ROLE_ARN=
@@ -22,6 +21,16 @@ AWS_TIMEOUT=3
 AWS_DESCRIPTION=
 AWS_RUNTIME=nodejs
 ```
+see also: [node-lambda](https://github.com/motdotla/node-lambda)
+
+#### raretw4pso2_tweet_weapon
+You need to create your Twitter App for this project. Then change ciphertext in index.js to these API keys of your Twitter App.
+
+You should encrypt your API keys with below format by KMS of AWS.
+
+```
+<consumer_key>,<consumer_secret>,<access_token_key>,<access_token_secret>
+```
 
 ## Development
 
@@ -29,7 +38,7 @@ AWS_RUNTIME=nodejs
 Add .env file to each lambda project and change env settings for development environment.
 
 ```
-AWS_ACCESS_KEY_ID=<your key ID>
+AWS_ACCESS_KEY_ID=<your access key ID>
 AWS_SECRET_ACCESS_KEY=<your secret access key>
 AWS_SESSION_TOKEN=
 AWS_ROLE_ARN=
@@ -44,8 +53,7 @@ AWS_RUNTIME=nodejs
 ```
 
 If you need, you can add event.json to each lambda project.
-you can debug these lambda codes.
-see also: [node-lambda](https://github.com/motdotla/node-lambda)
+You can debug these lambda codes.
 
 ```json
 {
@@ -63,3 +71,5 @@ see also: [node-lambda](https://github.com/motdotla/node-lambda)
   ]
 }
 ```
+
+see also: [node-lambda](https://github.com/motdotla/node-lambda)

@@ -1,0 +1,16 @@
+{
+  "name": "raretw4pso2_tweet_weapon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rikiya Kawakami",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.2.21",
+    "twitter": "^1.2.5"
+  }
+}
+
